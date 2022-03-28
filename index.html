@@ -2,26 +2,28 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>2D Breakout Game - JavScript</title>
     <link
-      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Germania+One&family=Inspiration&family=Palette+Mosaic&family=Raleway:wght@100&display=swap"
       rel="stylesheet"
+      href="http://fonts.googleapis.com/css?family=Germania+One"
     />
-    <link rel="stylesheet" href="./style.css" />
-    <title>Bricks Game</title>
+
+    <link rel="stylesheet" href="/style.css" />
   </head>
   <body>
     <div class="sound">
       <img src="img/SOUND_ON.png" alt="" id="sound" />
     </div>
-    <div class="gameover">
+
+    <div id="gameover">
       <img src="img/youwon.png" alt="" id="youwon" />
       <img src="img/gameover.png" alt="" id="youlose" />
-      <div id="restart">Play Again</div>
+      <div id="restart">Play Again!</div>
     </div>
+
     <canvas id="breakout" width="400" height="500"></canvas>
-    <script src="./components.js"></script>
-    <script src="./main.js"></script>
+
+    <script src="components.js"></script>
+    <script src="main.js"></script>
   </body>
 </html>
